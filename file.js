@@ -17,9 +17,7 @@ app.post("/",function(req,res){
       status:"subscribed",
       merge_fields:{FNAME:fname,
       LNAME:lname}
-    }
-    ]
-  }
+  }]}
 const jsondata=JSON.stringify(data);
 const url="https://us9.api.mailchimp.com/3.0/lists/f6d43bc655";
 // const url="https://us9.admin.mailchimp.com/lists/members/add?id=1036155";
