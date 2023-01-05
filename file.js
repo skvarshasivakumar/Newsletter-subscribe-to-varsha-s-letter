@@ -19,11 +19,11 @@ app.post("/",function(req,res){
       LNAME:lname}
   }]}
 const jsondata=JSON.stringify(data);
-const url="https://us9.api.mailchimp.com/3.0/lists/f6d43bc655";
+const url="https://us18.api.mailchimp.com/3.0/lists/f6d43bc655";
 // const url="https://us9.admin.mailchimp.com/lists/members/add?id=1036155";
 const options={
   method:"POST",
-  auth:"varsha:23d65ac7194b20306bb04b84de5bf445-us9"
+  auth:"career:3d4b242015e67ea752ae5865b84ede09-us18"
 }
 const request= https.request(url,options,function(response){
   if(response.statusCode===200){
